@@ -1,0 +1,27 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: gestion-polizas
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/polizas_db
+    username: postgres
+    password: 1234
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+
+integracion:
+  core:
+    url: ${CORE_URL:http://localhost:8080}
+
+security:
+  api-key: ${API_KEY:123456}

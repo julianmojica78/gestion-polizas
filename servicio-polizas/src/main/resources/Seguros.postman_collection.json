@@ -1,0 +1,180 @@
+{
+  "info": {
+    "_postman_id": "b7695830-a597-4e70-8b36-d3eb72450857",
+    "name": "Seguros",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "14030823"
+  },
+  "item": [
+    {
+      "name": "Consultar pólizas",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "123456",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "localhost:8080/polizas",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "polizas"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Consultar riesgos de una póliza",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "123456",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "localhost:8080/polizas/2/riesgos",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "polizas",
+            "2",
+            "riesgos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Renovar polizas",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "123456",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "localhost:8080/polizas/2/renovar",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "polizas",
+            "2",
+            "renovar"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Cancelar polizas",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "123456",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "localhost:8080/polizas/2/cancelar",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "polizas",
+            "2",
+            "cancelar"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Cancelar riesgo",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "123456",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "localhost:8080/riesgos/2/cancelar",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "riesgos",
+            "2",
+            "cancelar"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Polizas colectivas",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "123456",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "localhost:8080/polizas?tipo=COLECTIVA&estado=ACTIVA&page=0&size=10",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "polizas"
+          ],
+          "query": [
+            {
+              "key": "tipo",
+              "value": "COLECTIVA"
+            },
+            {
+              "key": "estado",
+              "value": "ACTIVA"
+            },
+            {
+              "key": "page",
+              "value": "0"
+            },
+            {
+              "key": "size",
+              "value": "10"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
